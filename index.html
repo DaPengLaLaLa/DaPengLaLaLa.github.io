@@ -162,6 +162,126 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python的程序分支结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/11/Python的程序分支结构/">Python的程序分支结构</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/11/Python的程序分支结构/" class="archive-article-date">
+  	<time datetime="2019-12-11T08:19:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="程序分支结构"><a href="#程序分支结构" class="headerlink" title="程序分支结构"></a>程序分支结构</h2><ul>
+<li><h4 id="单分支"><a href="#单分支" class="headerlink" title="单分支"></a>单分支</h4><p>   if 条件表达式:</p>
+<p>​        语句一</p>
+<p>​        语句二</p>
+<p>​        语句三</p>
+<p>​        ……</p>
+<p>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">例<span class="number">1</span>：</span><br><span class="line">a=<span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">1</span>:</span><br><span class="line">    print(<span class="string">"python简单吗？"</span>)</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">python简单吗？    </span><br><span class="line"></span><br><span class="line">例<span class="number">2</span>：</span><br><span class="line">a=<span class="string">"王尼玛"</span></span><br><span class="line"><span class="keyword">if</span> a:</span><br><span class="line">    print(<span class="string">"王尼玛说Python挺简单的"</span>)</span><br><span class="line">print(<span class="string">"我感觉还行吧"</span>)</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">Python挺简单的</span><br><span class="line">我感觉还行吧</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><h4 id="二分支"><a href="#二分支" class="headerlink" title="二分支"></a>二分支</h4><p>  if 条件表达式:</p>
+<p>​        语句一</p>
+<p>​        语句二</p>
+<p>​        ……</p>
+<p>​    else:</p>
+<p>​        语句一</p>
+<p>​        语句二</p>
+<p>​        ……</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">例<span class="number">1</span>：</span><br><span class="line">a=<span class="string">"b"</span></span><br><span class="line"><span class="keyword">if</span> a:</span><br><span class="line">    print(<span class="string">"王尼玛说Python还行"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"羊驼说Python是蟒蛇，它太可怕了"</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"上述是王尼玛的看法"</span>)</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">王尼玛说Python还行</span><br><span class="line">上述是王尼玛的看法</span><br><span class="line"></span><br><span class="line">例二：</span><br><span class="line">a=<span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> a:</span><br><span class="line">    print(<span class="string">"王尼玛说Python还行"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"羊驼说Python是蟒蛇，它太可怕了"</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"上述是羊驼的看法"</span>)</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">羊驼说Python是蟒蛇，它太可怕了</span><br><span class="line">上述是羊驼的看法</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><h4 id="多分支"><a href="#多分支" class="headerlink" title="多分支"></a>多分支</h4><p>if 条件表达式：<br>语句一</p>
+<p>语句二</p>
+<p>……</p>
+<p>elif 条件表达式：<br>语句一</p>
+<p>语句二</p>
+<p>……</p>
+<p>elif 条件表达式：<br>语句一</p>
+<p>语句二</p>
+<p>……<br>else:<br>语句一<br>… …</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">x=input(<span class="string">"谁在说话？"</span>)</span><br><span class="line"><span class="keyword">if</span> x==<span class="string">"王尼玛"</span>:</span><br><span class="line">    print(<span class="string">"王尼玛觉得python很简单"</span>)</span><br><span class="line"><span class="keyword">elif</span> x==<span class="string">"羊驼"</span>:</span><br><span class="line">    print(<span class="string">"羊驼觉得python像大蟒蛇一样可怕"</span>)</span><br><span class="line"><span class="keyword">elif</span> x==<span class="string">"王尼玛和羊驼"</span>:</span><br><span class="line">    print(<span class="string">"王尼玛和羊驼感觉好嗨"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"王尼玛和羊驼都没说话，因为他们都被蟒蛇吃掉了"</span>)</span><br><span class="line">    </span><br><span class="line">运行结果<span class="number">1</span>：</span><br><span class="line">谁在说话？王尼玛</span><br><span class="line">王尼玛觉得python很简单</span><br><span class="line"></span><br><span class="line">运行结果<span class="number">2</span>：</span><br><span class="line">谁在说话？羊驼</span><br><span class="line">羊驼觉得python像大蟒蛇一样可怕</span><br><span class="line"></span><br><span class="line">运行结果<span class="number">3</span>：</span><br><span class="line">谁在说话？王尼玛和羊驼</span><br><span class="line">王尼玛和羊驼感觉好嗨</span><br><span class="line"></span><br><span class="line">运行结果<span class="number">4</span>：</span><br><span class="line">谁在说话？没人说话</span><br><span class="line">王尼玛和羊驼都没说话，因为他们都被蟒蛇吃掉了</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>运用if 分支时没有最适合的，只有更适合的，因为只有适合的条件要求的程序才是最好的。另外在对表达式判断时只有Ture和False两种结果。</p>
+<p>谢谢观看，若有不足还望指出，相互学习。</p>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Python分支结构</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/11/Python的程序分支结构/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-计算机语言-编译和解释" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -431,11 +551,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">计算机语言基础</a>
+                <a href="javascript:void(0)" class="js-tag color4">PAT</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PAT</a>
+                <a href="javascript:void(0)" class="js-tag color1">Python分支结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">计算机语言基础</a>
               </li>
             
             <div class="clearfix"></div>
