@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Python指定文件位置 | 小鹏</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="指定文件的位置 ​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中： C:\Users\Documents\Python ​    如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建： 1test_file=open(&apos;test.txt">
+  <meta name="description" content="指定文件的位置​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中： C:\Users\Documents\Python 如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建： 1test_file=open(&apos;test.txt&apos;,&apos;w&apos;)">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python指定文件位置">
 <meta property="og:url" content="http://yoursite.com/2020/01/04/Python指定文件位置/index.html">
 <meta property="og:site_name" content="小鹏">
-<meta property="og:description" content="指定文件的位置 ​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中： C:\Users\Documents\Python ​    如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建： 1test_file=open(&apos;test.txt">
+<meta property="og:description" content="指定文件的位置​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中： C:\Users\Documents\Python 如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建： 1test_file=open(&apos;test.txt&apos;,&apos;w&apos;)">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-04T07:56:27.923Z">
+<meta property="og:updated_time" content="2020-01-04T08:01:53.158Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python指定文件位置">
-<meta name="twitter:description" content="指定文件的位置 ​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中： C:\Users\Documents\Python ​    如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建： 1test_file=open(&apos;test.txt">
+<meta name="twitter:description" content="指定文件的位置​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中： C:\Users\Documents\Python 如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建： 1test_file=open(&apos;test.txt&apos;,&apos;w&apos;)">
   
     <link rel="alternative" href="/atom.xml" title="小鹏" type="application/atom+xml">
   
@@ -185,23 +185,19 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="指定文件的位置"><a href="#指定文件的位置" class="headerlink" title="指定文件的位置"></a>指定文件的位置</h3><ul>
-<li><p>​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中：</p>
+        <h3 id="指定文件的位置"><a href="#指定文件的位置" class="headerlink" title="指定文件的位置"></a>指定文件的位置</h3><p>​    当你将文件名（不包含路径名）作为参数传递给 open 函数时，Python 解释器假定该文件的位置与程序所在位置相同。例如，假设程序位于Windows计算机上的以下文件夹中：</p>
 <p>C:\Users\Documents\Python</p>
-<p>​    如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建：</p>
+<p>如果程序正在运行并且执行下面的语句，文件 test.txt 将在同一个文件夹中创建：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_file=open(<span class="string">'test.txt'</span>,<span class="string">'w'</span>)</span><br></pre></td></tr></table></figure>
 
-<p>​    </p>
-<p>​    如果要在不同位置上打开文件，可以在参数中指定路径以及文件名并传递给open函数。如果以字符串的形式指定路径（特别是在Windows计算机上），请务必在字符串前面添加前缀字母 <strong>r</strong> 。下面是一个例子：</p>
+<p>​    如果要在不同位置上打开文件，可以在参数中指定路径以及文件名并传递给open函数。如果以字符串的形指定路径（特别是在Windows计算机上），请务必在字符串前面添加前缀字母 <strong>r</strong> 。下面是一个例子：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_file=open(<span class="string">r'C:\Users\Doucments\temp'</span>,<span class="string">'w'</span>)</span><br></pre></td></tr></table></figure>
 
-<p>​    该语句在 C:/Users/Doucments/temp 文件夹中创建了文件 test.txt 。用前缀 <strong>r</strong> 指定字符串是一个<strong>原始字符串</strong>。这将导致Python解释器将反斜杠字符读为文字反斜杠。如果没有前缀 <strong>r</strong> ,解释器将认为反斜杠字符是转义序列的一部分，就会发生错误。</p>
-</li>
-</ul>
-<p>  ​    但是我们也可以选择这样写，如下</p>
-  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_file=open(<span class="string">r'C:/Users/Doucments/temp'</span>,<span class="string">'w'</span>)</span><br></pre></td></tr></table></figure>
+<p>该语句在 C:/Users/Doucments/temp 文件夹中创建了文件 test.txt 。用前缀 <strong>r</strong> 指定字符串是一个<strong>原始字符串</strong>。   这将导致Python解释器将反斜杠字符读为文字反斜杠。如果没有前缀 <strong>r</strong> ,解释器将认为反斜杠字符是转义序列的一部分，就会发生错误。</p>
+<p>​    但是我们也可以选择这样写，如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test_file=open(<span class="string">r'C:/Users/Doucments/temp'</span>,<span class="string">'w'</span>)</span><br></pre></td></tr></table></figure>
 
-<p>  字符 <strong>’/‘</strong> 也可以替代反斜杠。</p>
+<p>字符 <strong>’/‘</strong> 也可以替代反斜杠 <strong>‘\’</strong>。</p>
 
       
 
@@ -449,23 +445,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PAT</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">观察者</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -473,7 +457,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">观察者</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">计算机语言基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
